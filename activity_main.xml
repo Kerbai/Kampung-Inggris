@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:padding="10dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/download"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:scaleType="fitXY"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/ge"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/loc"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="16dp"
+            android:src="@drawable/loc" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/loc"
+            android:textStyle="bold"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+            android:text="Jl.Brawijaya, Pare, Kediri"/>
+
+        <ImageView
+            android:id="@+id/tel"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_below="@id/loc"
+            android:src="@drawable/tel"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/tel"
+            android:layout_below="@id/loc"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="10dp"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+            android:textStyle="bold"
+            android:text="081333017789"/>
+
+        <LinearLayout
+            android:id="@+id/banner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tel"
+            android:layout_marginTop="25dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/week"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:src="@drawable/week"/>
+            <ImageView
+                android:id="@+id/month"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:src="@drawable/month"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:src="@drawable/months"/>
+
+        </LinearLayout>
+
+        <TextView
+
+            android:id="@+id/about"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="normal"
+            android:fontFamily="sans-serif"
+            android:scaleY="1.5"
+            android:layout_below="@id/banner"
+            android:layout_marginTop="20dp"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+            android:text="@string/about"/>
+
+          <TextView
+              android:layout_below="@id/about"
+              android:layout_alignParentRight="true"
+              android:layout_marginTop="30dp"
+              android:layout_marginRight="16dp"
+             android:layout_width="wrap_content"
+              android:textStyle="bold"
+              android:textSize="16sp"
+             android:layout_height="wrap_content"
+             android:text="IT'S TIME TO CHANGE, ENROLL NOW"/>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>
